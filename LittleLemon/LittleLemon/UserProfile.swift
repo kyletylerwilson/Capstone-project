@@ -14,6 +14,7 @@ struct UserProfile: View {
     let firstName = UserDefaults.standard.string(forKey: "first name key")
     let lastName = UserDefaults.standard.string(forKey: "last name key")
     let email = UserDefaults.standard.string(forKey: "email key")
+    let isLoggedIn = UserDefaults.standard.string(forKey: "IsLoggedIn key")
     
     @State var orderStatuses = false
     @State var passwordChanges = false
@@ -133,7 +134,7 @@ struct UserProfile: View {
                     .foregroundColor(.black)
                     .bold()
                     .frame(width: 370, height: 40)
-                    .background(.yellow)
+                    .background(Color("Little-Lemon"))
                     .border(Color("Hero-Background"))
             }
             HStack {
