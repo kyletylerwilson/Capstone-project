@@ -71,7 +71,7 @@ struct Menu: View {
                     .cornerRadius(25)
                 VStack(alignment: .leading) {
                     Text("Little Lemon")
-                        .foregroundColor(Color("Little Lemon Title"))
+                        .foregroundColor(Color("Little-Lemon"))
                         .font(.largeTitle)
                         .bold()
                     Text("Chicago")
